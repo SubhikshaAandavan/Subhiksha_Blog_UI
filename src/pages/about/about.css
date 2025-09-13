@@ -1,0 +1,55 @@
+.about {
+  padding: 50px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.aboutWrapper {
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.aboutWrapper h1,
+.aboutWrapper h2 {
+  color: teal;
+  margin-bottom: 15px;
+}
+
+.aboutWrapper p {
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  color: #444;
+}
+.aboutWrapper a {
+  color: teal;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+  .about {
+    padding: 20px;
+  }
+
+  .aboutWrapper {
+    padding: 20px;
+  }
+
+  .aboutWrapper h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .aboutWrapper h2 {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  .aboutWrapper p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: justify;
+  }
+}

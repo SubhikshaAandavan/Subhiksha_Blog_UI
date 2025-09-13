@@ -1,0 +1,163 @@
+.top {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    position: sticky;
+    top: 0;
+    font-family: "Josefin Sans", sans-serif;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    box-shadow: 5px 5px rgb(234, 227, 227) ;
+
+}
+
+.topLeft,
+.topRight {
+    flex: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.topCenter {
+    flex: 6;
+}
+
+.topImg {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+
+.topIcon {
+    font-size: 20px;
+    margin-right: 10px;
+    color: #444;
+    cursor: pointer;
+
+}
+
+.topList {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+.topListItem{
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight:300;
+    cursor: pointer;
+}
+.topSearchIcon{
+    font-size: 18px;
+    color:#666;
+    cursor: pointer;
+    margin-left: 35px;
+}
+.searchForm {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.searchInput {
+  padding: 5px 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  outline: none;
+}
+/* ...existing code... */
+
+@media (max-width: 600px) {
+  .top {
+    height: 40px;
+    flex-direction: column;
+    box-shadow: 2px 2px rgb(234, 227, 227);
+    padding: 0 5px;
+  }
+
+  .topLeft,
+  .topRight,
+  .topCenter {
+    flex: unset;
+    width: 100%;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+  }
+
+  .topImg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .topIcon,
+  .topSearchIcon {
+    font-size: 16px;
+    margin-right: 5px;
+    margin-left: 10px;
+  }
+
+  .topList {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .topListItem {
+    margin-right: 0;
+    margin-bottom: 8px;
+    font-size: 15px;
+  }
+
+  .searchForm {
+    margin-left: 0;
+    margin-top: 5px;
+    width: 100%;
+  }
+
+  .searchInput {
+    width: 90%;
+    font-size: 14px;
+    padding: 4px 8px;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .top {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .topLeft,
+  .topRight,
+  .topCenter {
+    flex: unset;
+    margin: 5px 0;
+  }
+
+  .topList {
+    flex-wrap: wrap;
+  }
+
+  .topListItem {
+    margin: 5px 10px;
+    font-size: 14px;
+  }
+
+  .searchForm {
+    margin-left: 0;
+    margin-top: 5px;
+  }
+
+  .searchInput {
+    width: 100%;
+    max-width: 250px;
+  }
+}

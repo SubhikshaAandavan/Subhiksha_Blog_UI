@@ -1,0 +1,89 @@
+.contact {
+  padding: 50px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.contactWrapper {
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contactWrapper h1 {
+  color: teal;
+  margin-bottom: 20px;
+}
+
+.contactWrapper p {
+  font-size: 18px;
+  margin-bottom: 25px;
+  color: #555;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contactForm input,
+.contactForm textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.contactForm textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.contactForm button {
+  padding: 12px;
+  background-color: teal;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contactForm button:hover {
+  background-color: #006666;
+}
+
+@media screen and (max-width: 600px) {
+  .contact {
+    padding: 20px;
+  }
+
+  .contactWrapper {
+    padding: 20px;
+  }
+
+  .contactWrapper h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .contactWrapper p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  .contactForm input,
+  .contactForm textarea {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .contactForm button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
